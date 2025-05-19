@@ -1,4 +1,4 @@
-import speech_recognition as sr
+ximport speech_recognition as sr
 import random
 import webbrowser
 import datetime
@@ -117,9 +117,9 @@ def main_process():
             try:
                 s = smtplib.SMTP('smtp.gmail.com', 587)
                 s.starttls()
-                s.login("patelvaibhavi565@gmail.com", user_config.gmail_password)
+                s.login("example123@gmail.com", user_config.gmail_password)
                 message = "This is the message."
-                s.sendmail("patelvaibhavi565@gmail.com", "vairagirana@gmail.com", message)
+                s.sendmail("example123@gmail.com", "examplexyz@gmail.com", message)
                 s.quit()
                 speak("Email sent successfully.")
             except Exception as e:
